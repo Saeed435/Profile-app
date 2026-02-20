@@ -1,0 +1,15 @@
+.profile-card {
+  max-width: 400px;
+  margin: 20px;
+  padding: 16px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.profile-card img {
+  width: 8rem;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: aqua solid 2px;
+}
