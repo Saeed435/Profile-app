@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+</head>
+<body>
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="todo-container">
+        <h1>My Tasks</h1>
+        <!-- Insert this line directly under your H1 heading -->
+<p id="task-counter" class="task-counter">0 of 0 tasks completed</p>
+
+        
+        <!-- Input area -->
+        <form id="todo-form" class="todo-form">
+            <input type="text" id="todo-input" placeholder="Add a new task..." required autocomplete="off">
+            <button type="submit">Add</button>
+        </form>
+
+        <!-- Insert this directly below the form element -->
+<div class="filters-container">
+    <button type="button" class="filter-btn active-filter" data-filter="all">All</button>
+    <button type="button" class="filter-btn" data-filter="active">Active</button>
+    <button type="button" class="filter-btn" data-filter="completed">Completed</button>
+</div>
+
+
+        <!-- Task list container -->
+        <ul id="todo-list" class="todo-list"></ul>
+
+        <footer class="footer">
+        <p>&copy; 2026 My To-Do List App</p>
+    </footer>
+    </main>
+
+   
+    <!-- <footer class="footer">
+        <p>&copy; 2026 My To-Do List App</p>
+    </footer> -->
+
+    <!-- JavaScript Link -->
+    <script src="script.js"></script>
+</body>
+</html>

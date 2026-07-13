@@ -1,0 +1,176 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* App Container */
+.todo-container {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 450px;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Form Styles */
+.todo-form {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 1.5rem;
+}
+
+#todo-input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+#todo-input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* List Styles */
+.todo-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Interactive Task Card */
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f8fafc;
+    border: 1px solid #edf2f7;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Filter Layout Styling */
+.filters-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 1.5rem;
+}
+
+/* Secondary Button Look for Tabs */
+.filter-btn {
+    flex: 1;
+    background-color: #f1f5f9;
+    color: #64748b;
+    padding: 8px 12px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.filter-btn:hover {
+    background-color: #e2e8f0;
+    color: #334155;
+    transform: none;
+}
+
+/* Highlight Color for Selected Active Tab */
+.filter-btn.active-filter {
+    background-color: #3498db;
+    color: white;
+}
+
+.filter-btn.active-filter:hover {
+    background-color: #2980b9;
+}
+
+
+/* Completed Task State Animations */
+.todo-item.completed {
+    background: #f1f5f9;
+    border-color: #e2e8f0;
+    opacity: 0.6;
+}
+
+/* Delete Button Specifics */
+.delete-btn {
+    background-color: #e74c3c;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.task-counter {
+    text-align: center;
+    color: #64748b;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer{
+    text-align: center;
+    margin-top: 2rem;
+    color: #94a3b8;
+    font-size: 0.85rem; 
+}
